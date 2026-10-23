@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Kero - Registro de Comelón</title>
+     <!-- Tipografía Fredoka -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" href="../img/logo-icono.png">
+    <link rel="stylesheet" href="../css/comelon.css"> 
+</head>
+<body>
+
+    <header class="cabecera-registro">
+        <h2>Bienvenido Comelón</h2>
+        <p>Crea tu cuenta para empezar a salvar comida y ahorrar dinero hoy mismo.</p>
+    </header>
+
+    <hr>
+
+    <main class="contenido-registro">
+        <form action="../modules/procesar_registro.php" method="POST" class="form-registro-comelon">
+            <p class="campo-form">
+                <label for="nombre">Tu Nombre Completo:</label><br>
+                <input type="text" id="nombre" name="nombre" required placeholder="Ej. Carlos Mendoza" class="input-texto">
+            </p>
+            <p class="campo-form">
+                <label for="correo">Correo Electrónico:</label><br>
+                <input type="email" id="correo" name="correo" required placeholder="Ej. carlos@gmail.com" class="input-email">
+            </p>
+            
+            <p class="campo-form">
+                <label for="telefono">Número de Teléfono Celular (WhatsApp):</label><br>
+                <input type="tel" id="telefono" name="telefono" required 
+                       pattern="^(0414|0424|0412|0416|0426)[0-9]{7}$" 
+                       placeholder="Ej. 04241234567" class="input-tel">
+                <br><small class="texto-ayuda">Ingresa los 11 dígitos (Debe empezar por 0414, 0424, 0412, etc.)</small>
+            </p>
+
+            <p class="campo-form">
+                <label for="password">Crea una Contraseña:</label><br>
+                <input type="password" id="password" name="password" required placeholder="Mínimo 6 caracteres" class="input-password">
+            </p>
+            
+            <p class="campo-boton">
+                <button type="submit" class="btn-registro-comelon">Kero empezar a Comer!</button>
+            </p>
+        </form>
+    </main>
+
+    <footer class="pie-registro">
+        <p><a href="login.html" class="enlace-login">¿Ya tienes cuenta? Inicia sesión</a></p>
+    </footer>
+
+   <!-- VENTANA MODAL DE NOTIFICACIÓN (Oculta hasta que hay un aviso) -->
+ <div id="modal-notificacion" class="modal-overlay">
+    <div class="modal-caja">
+        <div id="modal-icono" class="modal-icono">⚠️</div>
+        <h3 id="modal-titulo">¡Atención!</h3>
+        <p id="modal-mensaje">Mensaje...</p>
+        <button type="button" id="btn-cerrar-modal" class="btn-modal">Entendido</button>
+    </div>
+ </div>
+
+  <script src="../js/alerta.js"></script>
+
+</body>
+</html>

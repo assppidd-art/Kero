@@ -1,0 +1,204 @@
+/* ESTILOS KERO - PANTALLA DE LOGIN */
+
+/* Reseteo básico */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Fredoka', system-ui, -apple-system, sans-serif;
+}
+
+/* Fondo principal centrado */
+.body-login {
+    background-color: #fef7f2;
+    background-image: radial-gradient(#ffe3d1 1px, transparent 1px);
+    background-size: 20px 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    padding: 20px;
+}
+
+/* Tarjeta contenedora principal */
+.contenedor-login {
+    background-color: #ffffff;
+    width: 100%;
+    max-width: 400px;
+    padding: 35px 30px;
+    border-radius: 24px;
+    box-shadow: 0 10px 25px rgba(255, 126, 0, 0.1);
+    border: 1.5px solid #ffd8be;
+}
+
+/* Cabecera del login */
+.cabecera-login {
+    text-align: center;
+    margin-bottom: 25px;
+}
+
+.logo-kero {
+    font-size: 2.5rem;
+    color: #ff7e00;
+    font-weight: 700;
+    margin-bottom: 5px;
+}
+
+.cabecera-login h2 {
+    color: #333333;
+    font-size: 1.3rem;
+}
+
+/* Formulario e Inputs */
+.form-login {
+    display: flex;
+    flex-direction: column;
+    gap: 18px;
+}
+
+.campo-form {
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+}
+
+.campo-form label {
+    font-size: 0.9rem;
+    font-weight: 600;
+    color: #444444;
+}
+
+.input-form {
+    padding: 12px 14px;
+    border: 1.5px solid #ffd8be;
+    border-radius: 12px;
+    font-size: 0.95rem;
+    background-color: #fffaf7;
+    transition: all 0.2s ease;
+    outline: none;
+}
+
+.input-form:focus {
+    border-color: #ff7e00;
+    background-color: #ffffff;
+    box-shadow: 0 0 0 4px rgba(255, 126, 0, 0.15);
+}
+
+/* Botón de ingreso */
+.campo-boton {
+    margin-top: 5px;
+}
+
+.btn-login {
+    width: 100%;
+    padding: 13px;
+    background-color: #ff7e00;
+    color: #ffffff;
+    font-size: 1rem;
+    font-weight: bold;
+    border: none;
+    border-radius: 12px;
+    cursor: pointer;
+    box-shadow: 0 4px 12px rgba(255, 126, 0, 0.25);
+    transition: all 0.2s ease;
+}
+
+.btn-login:hover {
+    background-color: #e06d00;
+    transform: translateY(-2px);
+}
+
+.btn-login:active {
+    transform: translateY(0);
+}
+
+/* Pie de tarjeta / Enlaces */
+.pie-login {
+    margin-top: 25px;
+    text-align: center;
+    font-size: 0.9rem;
+    color: #666666;
+}
+
+.enlace-registro {
+    color: #ff7e00;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.enlace-registro:hover {
+    text-decoration: underline;
+}
+
+/* FIX DEFINITIVO DE LA MODAL (CENTRADOR FIX) */
+
+/* 1. Estado Base: Oculto y fijo en toda la pantalla */
+#modal-notificacion {
+    position: fixed !important;
+    top: 0 !important;
+    left: 0 !important;
+    right: 0 !important;
+    bottom: 0 !important;
+    width: 100vw !important;
+    height: 100vh !important;
+    background-color: rgba(0, 0, 0, 0.65) !important;
+    backdrop-filter: blur(5px);
+    
+    /* Oculto por defecto */
+    display: none !important;
+    
+    /* Centrado Flexbox universal */
+    justify-content: center !important;
+    align-items: center !important;
+    
+    z-index: 99999 !important;
+}
+
+/* 2. Estado Activo: Se fuerza usando el ID para romper cualquier conflicto */
+#modal-notificacion.activo {
+    display: flex !important;
+}
+
+/* 3. La tarjeta blanca interior */
+#modal-notificacion .modal-caja {
+    background-color: #ffffff !important;
+    width: 90% !important;
+    max-width: 400px !important;
+    margin: auto !important; /* Asegura centrado absoluto */
+    padding: 30px 25px !important;
+    border-radius: 20px !important;
+    text-align: center !important;
+    box-shadow: 0 15px 35px rgba(0, 0, 0, 0.3) !important;
+    box-sizing: border-box !important;
+}
+
+/* Estilos de botones y textos dentro de la modal */
+#modal-notificacion .modal-icono {
+    font-size: 2.8rem;
+    margin-bottom: 10px;
+}
+
+#modal-notificacion h3 {
+    margin: 10px 0;
+    font-family: 'Fredoka', sans-serif;
+    color: #333;
+}
+
+#modal-notificacion p {
+    font-family: 'Fredoka', sans-serif;
+    color: #666;
+    font-size: 0.95rem;
+    margin-bottom: 20px;
+}
+
+#modal-notificacion .btn-modal {
+    background-color: #ff6b35;
+    color: white;
+    border: none;
+    padding: 12px 25px;
+    border-radius: 12px;
+    font-weight: 600;
+    cursor: pointer;
+    width: 100%;
+    font-size: 1rem;
+}

@@ -1,0 +1,323 @@
+/* KERO - ESTILOS REGISTRO COMERCIO / LOCAL */
+
+@import url('https://fonts.googleapis.com/css2?family=Fredoka:wght@300;400;500;600;700&display=swap');
+
+/* Reseteo Global */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Fredoka', sans-serif;
+}
+
+/* Variables de Color (Paleta Kero) */
+:root {
+    --naranja-kero: #ff7e00;
+    --naranja-hover: #e06d00;
+    --naranja-suave: #ffd8be;
+    --fondo-puntos: #ffe3d1;
+    --fondo-principal: #fef7f2;
+    --blanco: #ffffff;
+    --texto-principal: #333333;
+    --texto-secundario: #666666;
+    --negro-comercio: #222222;
+    --verde-verificado: #16a34a;
+}
+
+body {
+    background-color: var(--fondo-principal);
+    background-image: radial-gradient(var(--fondo-puntos) 1px, transparent 1px);
+    background-size: 20px 20px;
+    color: var(--texto-principal);
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 40px 20px;
+}
+
+hr {
+    display: none;
+}
+
+/* LOGO Y CABECERA */
+.cabecera-registro {
+    text-align: center;
+    margin-bottom: 25px;
+    max-width: 520px;
+}
+
+.logo-kero {
+    height: 65px;
+    width: auto;
+    margin-bottom: 15px;
+    transition: transform 0.2s ease;
+}
+
+.logo-kero:hover {
+    transform: scale(1.04);
+}
+
+.cabecera-registro h2 {
+    font-size: 2rem;
+    color: var(--negro-comercio);
+    font-weight: 700;
+    margin-bottom: 8px;
+}
+
+.cabecera-registro p {
+    font-size: 0.95rem;
+    color: var(--texto-secundario);
+    line-height: 1.4;
+}
+
+/* CONTENEDOR DEL FORMULARIO */
+.contenido-registro {
+    background-color: var(--blanco);
+    width: 100%;
+    max-width: 580px;
+    padding: 35px;
+    border-radius: 24px;
+    border: 1.5px solid var(--naranja-suave);
+    box-shadow: 0 12px 35px rgba(0, 0, 0, 0.06);
+}
+
+.form-registro-comercio {
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+}
+
+/* GRUPOS SECCIONALES (FIELDSET) */
+.grupo-formulario {
+    border: 1px solid var(--naranja-suave);
+    background-color: #fffcf9;
+    border-radius: 16px;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+.grupo-formulario legend {
+    padding: 0 10px;
+}
+
+.grupo-formulario legend h3 {
+    font-size: 1.05rem;
+    color: var(--naranja-kero);
+    font-weight: 700;
+}
+
+/* INPUTS Y FORMULARIOS */
+.campo-form {
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+}
+
+.campo-form label {
+    font-size: 0.92rem;
+    font-weight: 600;
+    color: var(--texto-principal);
+}
+
+.input-texto,
+.input-email,
+.input-tel,
+.input-password,
+.input-time,
+.select-categoria,
+.select-zona,
+.textarea-pago {
+    width: 100%;
+    padding: 12px 14px;
+    border: 1.5px solid var(--naranja-suave);
+    border-radius: 10px;
+    font-size: 0.95rem;
+    color: var(--texto-principal);
+    background-color: var(--blanco);
+    outline: none;
+    transition: all 0.2s ease;
+}
+
+.textarea-pago {
+    resize: vertical;
+    min-height: 70px;
+}
+
+/* FOCO EN INPUTS */
+.input-texto:focus,
+.input-email:focus,
+.input-tel:focus,
+.input-password:focus,
+.input-time:focus,
+.select-categoria:focus,
+.select-zona:focus,
+.textarea-pago:focus {
+    border-color: var(--naranja-kero);
+    box-shadow: 0 0 0 4px rgba(255, 126, 0, 0.15);
+}
+
+.texto-ayuda {
+    font-size: 0.8rem;
+    color: var(--texto-secundario);
+    line-height: 1.3;
+}
+
+/* CAJA DE DESTACADOS VERIFICADO / INDEPENDIENTE */
+.caja-informativa-verificacion {
+    background-color: var(--fondo-principal);
+    border-left: 3.5px solid var(--naranja-kero);
+    padding: 10px 12px;
+    border-radius: 8px;
+    margin-top: 8px;
+}
+
+.resaltado-verificado {
+    color: var(--verde-verificado);
+}
+
+.resaltado-independiente {
+    color: var(--naranja-kero);
+}
+
+/* BOTÓN DE ENVÍO */
+.campo-boton {
+    margin-top: 10px;
+}
+
+.btn-registro-comercio {
+    width: 100%;
+    padding: 15px;
+    background-color: var(--negro-comercio);
+    color: var(--blanco);
+    border: none;
+    border-radius: 12px;
+    font-size: 1.05rem;
+    font-weight: 700;
+    cursor: pointer;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+    transition: all 0.2s ease;
+}
+
+.btn-registro-comercio:hover {
+    background-color: #000000;
+    transform: translateY(-2px);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
+}
+
+.btn-registro-comercio:active {
+    transform: translateY(0);
+}
+
+/* FOOTER Y LOGIN */
+.pie-registro {
+    margin-top: 25px;
+    text-align: center;
+}
+
+.enlace-login {
+    color: var(--texto-principal);
+    text-decoration: none;
+    font-size: 0.95rem;
+    font-weight: 500;
+    transition: color 0.2s ease;
+}
+
+.enlace-login:hover {
+    color: var(--naranja-kero);
+    text-decoration: underline;
+}
+
+/* RESPONSIVO */
+@media (max-width: 600px) {
+    .contenido-registro {
+        padding: 22px 16px;
+    }
+    
+    .grupo-formulario {
+        padding: 15px;
+    }
+    
+    .cabecera-registro h2 {
+        font-size: 1.7rem;
+    }
+}
+
+/* ESTILOS DE LA MODAL / NOTIFICACIÓN FLO */
+.modal-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    backdrop-filter: blur(4px);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    opacity: 0;
+    pointer-events: none;
+    transition: opacity 0.3s ease;
+    z-index: 1000;
+}
+
+/* Estado Activo */
+.modal-overlay.activo {
+    opacity: 1;
+    pointer-events: auto;
+}
+
+.modal-caja {
+    background: #ffffff;
+    width: 90%;
+    max-width: 380px;
+    padding: 25px 20px;
+    border-radius: 20px;
+    text-align: center;
+    border: 2px solid #ffd8be;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15);
+    transform: translateY(-20px);
+    transition: transform 0.3s ease;
+}
+
+.modal-overlay.activo .modal-caja {
+    transform: translateY(0);
+}
+
+.modal-icono {
+    font-size: 2.5rem;
+    margin-bottom: 10px;
+}
+
+.modal-caja h3 {
+    font-size: 1.3rem;
+    color: #ff7e00;
+    margin-bottom: 8px;
+}
+
+.modal-caja p {
+    font-size: 0.95rem;
+    color: #555555;
+    margin-bottom: 20px;
+    line-height: 1.4;
+}
+
+.btn-modal {
+    width: 100%;
+    padding: 12px;
+    background-color: #ff7e00;
+    color: white;
+    border: none;
+    border-radius: 10px;
+    font-size: 1rem;
+    font-weight: 700;
+    cursor: pointer;
+    transition: background 0.2s ease;
+}
+
+.btn-modal:hover {
+    background-color: #e06d00;
+}

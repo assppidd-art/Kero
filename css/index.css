@@ -1,0 +1,519 @@
+/* ESTILOS KERO - INDEX COMPLETO  */
+
+/* Reseteo global usando la tipografía Fredoka */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Fredoka', sans-serif;
+}
+
+/* Variables globales de diseño */
+:root {
+    --naranja-kero: #ff7e00;
+    --naranja-hover: #e06d00;
+    --naranja-suave: #ffd8be;
+    --fondo-puntos: #ffe3d1;
+    --fondo-principal: #fef7f2;
+    --blanco: #ffffff;
+    --texto-principal: #333333;
+    --texto-secundario: #666666;
+}
+
+/* Fondo principal de la página (Trama de puntos) */
+.body-index {
+    background-color: var(--fondo-principal);
+    background-image: radial-gradient(var(--fondo-puntos) 1px, transparent 1px);
+    background-size: 20px 20px;
+    color: var(--texto-principal);
+    overflow-x: hidden;
+}
+
+/* NAVBAR */
+.navbar {
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    background-color: var(--blanco);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 12px 5%;
+    border-bottom: 1px solid var(--naranja-suave);
+    box-shadow: 0 4px 15px rgba(255, 126, 0, 0.05);
+}
+
+.logo-texto {
+    height: 60px;
+    width: auto;
+    display: block;
+    object-fit: contain;
+}
+
+.nav-links {
+    display: flex;
+    align-items: center;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: var(--texto-principal);
+    font-weight: 500;
+    margin-left: 24px;
+    font-size: 1rem;
+    transition: color 0.2s ease;
+}
+
+.nav-links a:hover {
+    color: var(--naranja-kero);
+}
+
+.btn-login-nav {
+    background-color: var(--naranja-kero);
+    color: var(--blanco) !important;
+    padding: 10px 22px;
+    border-radius: 8px;
+    font-weight: 600;
+    transition: background-color 0.2s ease, transform 0.1s ease !important;
+}
+
+.btn-login-nav:hover {
+    background-color: var(--naranja-hover) !important;
+}
+
+.btn-login-nav:active {
+    transform: scale(0.98);
+}
+
+/* HERO SECTION - LAYOUT 2 COLUMNAS */
+.hero-section {
+    padding: 60px 5% 80px;
+}
+
+.hero-container {
+    max-width: 1100px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 40px;
+}
+
+.hero-content {
+    flex: 1;
+    text-align: left;
+}
+
+.badge-hero {
+    display: inline-block;
+    background-color: var(--blanco);
+    color: var(--naranja-kero);
+    border: 1px solid var(--naranja-suave);
+    padding: 6px 14px;
+    border-radius: 20px;
+    font-size: 0.85rem;
+    font-weight: 600;
+    margin-bottom: 20px;
+}
+
+.hero-title {
+    font-size: 2.8rem;
+    color: var(--texto-principal);
+    line-height: 1.2;
+    font-weight: 700;
+    margin-bottom: 20px;
+}
+
+.destacado-naranja {
+    color: var(--naranja-kero);
+    position: relative;
+    display: inline-block;
+}
+
+.hero-subtitle {
+    font-size: 1.1rem;
+    color: var(--texto-secundario);
+    line-height: 1.6;
+    margin-bottom: 32px;
+    max-width: 520px;
+}
+
+.hero-buttons {
+    display: flex;
+    gap: 12px;
+    flex-wrap: wrap;
+    margin-bottom: 30px;
+}
+
+.btn-hero {
+    display: inline-block;
+    text-decoration: none;
+    font-size: 1rem;
+    font-weight: 600;
+    padding: 13px 26px;
+    border-radius: 8px;
+    transition: all 0.2s ease;
+}
+
+.btn-hero.primary {
+    background-color: var(--naranja-kero);
+    color: var(--blanco);
+    box-shadow: 0 4px 12px rgba(255, 126, 0, 0.25);
+}
+
+.btn-hero.primary:hover {
+    background-color: var(--naranja-hover);
+}
+
+.btn-hero.secondary {
+    background-color: var(--blanco);
+    color: var(--naranja-kero);
+    border: 1px solid var(--naranja-suave);
+}
+
+.btn-hero.secondary:hover {
+    border-color: var(--naranja-kero);
+    background-color: #fffaf7;
+}
+
+.hero-social-proof {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-size: 0.9rem;
+    color: var(--texto-secundario);
+}
+
+.dot-live {
+    width: 10px;
+    height: 10px;
+    background-color: #22c55e;
+    border-radius: 50%;
+    box-shadow: 0 0 0 3px rgba(34, 197, 94, 0.2);
+}
+
+/* IMAGEN DEL HERO (JPG) CON SOMBRA INTENSA */
+.hero-image-container {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.hero-img {
+    width: 100%;
+    max-width: 460px;
+    height: auto;
+    border-radius: 24px;
+    box-shadow: 0 20px 40px rgba(255, 126, 0, 0.2);
+    object-fit: cover;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.hero-img:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 25px 50px rgba(255, 126, 0, 0.3);
+}
+
+/* SECCIÓN ¿CÓMO FUNCIONA EL RESUELVE? */
+.seccion-pasos {
+    padding: 60px 20px;
+    text-align: center;
+}
+
+.titulo-seccion {
+    font-size: 2rem;
+    color: var(--texto-principal);
+    margin-bottom: 40px;
+    font-weight: 700;
+}
+
+.grid-pasos {
+    display: flex;
+    justify-content: center;
+    gap: 25px;
+    flex-wrap: wrap;
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+/* TARJETAS CON BRILLO INTENSO AL HOVER */
+.tarjeta-paso {
+    background: var(--blanco);
+    padding: 30px 24px;
+    border-radius: 20px;
+    width: 280px;
+    border: 1.5px solid var(--naranja-suave);
+    box-shadow: 0 4px 15px rgba(255, 126, 0, 0.05);
+    cursor: pointer;
+    transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
+}
+
+.tarjeta-paso:hover {
+    transform: translateY(-8px);
+    border-color: var(--naranja-kero);
+    box-shadow: 0 12px 30px rgba(255, 126, 0, 0.35), 
+                0 0 25px rgba(255, 126, 0, 0.25);
+}
+
+.tarjeta-paso h3 {
+    color: var(--texto-principal);
+    margin: 16px 0 8px;
+    font-size: 1.2rem;
+}
+
+.tarjeta-paso p {
+    color: var(--texto-secundario);
+    font-size: 0.95rem;
+    line-height: 1.5;
+}
+
+/* PLACEHOLDERS DE IMÁGENES */
+.img-placeholder {
+    width: 65px;
+    height: 65px;
+    background-color: var(--fondo-principal);
+    border: 1px dashed var(--naranja-kero);
+    border-radius: 12px;
+    margin: 0 auto;
+}
+
+
+.img-placeholder.card-img {
+    width: 130px;
+    height: 130px;
+    margin: 10px auto 15px;
+    object-fit: contain;
+    border: 2px dashed var(--naranja-kero); 
+    border-radius: 20px;                    
+    padding: 10px;                           
+    background-color: var(--fondo-principal);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* SECCIÓN DE TARJETAS 3D (REGISTRO) */
+.seccion-perfiles {
+    padding: 60px 20px;
+    text-align: center;
+}
+
+.contenedor-flip-cards {
+    display: flex;
+    justify-content: center;
+    gap: 32px;
+    flex-wrap: wrap;
+}
+
+.flip-card {
+    background-color: transparent;
+    width: 340px;
+    height: 440px;
+    perspective: 1000px;
+}
+
+.flip-card-inner {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    transition: transform 0.6s ease;
+    transform-style: preserve-3d;
+}
+
+.flip-card:hover .flip-card-inner {
+    transform: rotateY(180deg);
+}
+
+.flip-card-front, .flip-card-back {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    backface-visibility: hidden;
+    border-radius: 16px;
+    padding: 30px 24px;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    background-color: var(--blanco);
+    border: 1px solid var(--naranja-suave);
+    box-shadow: 0 10px 25px rgba(255, 126, 0, 0.08);
+}
+
+.card-comelon {
+    border-top: 6px solid var(--naranja-kero);
+}
+
+.card-comercio {
+    border-top: 6px solid var(--texto-principal);
+}
+
+.badge-card {
+    align-self: center;
+    background: var(--fondo-principal);
+    color: var(--naranja-kero);
+    padding: 4px 12px;
+    border-radius: 20px;
+    font-size: 0.85rem;
+    font-weight: 600;
+    border: 1px solid var(--naranja-suave);
+}
+
+.flip-card-front h3 {
+    color: var(--texto-principal);
+    margin: 8px 0;
+    font-size: 1.3rem;
+}
+
+.flip-card-front p {
+    color: var(--texto-secundario);
+    font-size: 0.95rem;
+    line-height: 1.5;
+}
+
+.indicador-giro {
+    font-size: 0.85rem;
+    color: var(--texto-secundario);
+}
+
+.flip-card-back {
+    transform: rotateY(180deg);
+    text-align: left;
+}
+
+.card-comelon-back {
+    border-top: 6px solid var(--naranja-kero);
+}
+
+.card-comercio-back {
+    border-top: 6px solid var(--texto-principal);
+}
+
+.flip-card-back h3 {
+    color: var(--texto-principal);
+    margin-top: 0;
+    font-size: 1.25rem;
+}
+
+.flip-card-back ul {
+    padding-left: 18px;
+    color: var(--texto-secundario);
+    font-size: 0.9rem;
+    line-height: 1.6;
+}
+
+.texto-req {
+    font-size: 0.88rem;
+    color: var(--texto-secundario);
+}
+
+.box-verificado {
+    background: var(--fondo-principal);
+    padding: 12px;
+    border-radius: 8px;
+    font-size: 0.82rem;
+    border: 1px solid var(--naranja-suave);
+    border-left: 3px solid var(--naranja-kero);
+}
+
+.box-verificado strong {
+    color: var(--texto-principal);
+}
+
+.box-verificado p {
+    margin: 4px 0 0;
+    color: var(--texto-secundario);
+}
+
+.btn-card {
+    display: block;
+    text-align: center;
+    text-decoration: none;
+    font-weight: 600;
+    padding: 12px;
+    border-radius: 8px;
+    font-size: 0.95rem;
+    transition: background-color 0.2s ease;
+}
+
+.btn-card.primary-card {
+    background-color: var(--naranja-kero);
+    color: var(--blanco);
+}
+
+.btn-card.primary-card:hover {
+    background-color: var(--naranja-hover);
+}
+
+.btn-card.secondary-card {
+    background-color: var(--texto-principal);
+    color: var(--blanco);
+}
+
+.btn-card.secondary-card:hover {
+    background-color: #000000;
+}
+
+/* FRANJA DE IMPACTO */
+.franja-impacto {
+    background-color: var(--blanco);
+    border-top: 1px solid var(--naranja-suave);
+    border-bottom: 1px solid var(--naranja-suave);
+    display: flex;
+    justify-content: space-around;
+    padding: 50px 20px;
+    flex-wrap: wrap;
+    gap: 20px;
+    box-shadow: 0 4px 15px rgba(255, 126, 0, 0.05);
+}
+
+.metrica {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+
+.metrica .num {
+    font-size: 2.8rem;
+    font-weight: 700;
+    color: var(--naranja-kero);
+}
+
+.metrica .txt {
+    font-size: 0.95rem;
+    color: var(--texto-secundario);
+    font-weight: 500;
+}
+
+/* FOOTER */
+.footer-kero {
+    background-color: var(--blanco);
+    color: var(--texto-secundario);
+    text-align: center;
+    padding: 24px 20px;
+    font-size: 0.88rem;
+    border-top: 1px solid var(--naranja-suave);
+}
+
+/* RESPONSIVO */
+@media (max-width: 850px) {
+    .hero-container {
+        flex-direction: column;
+        text-align: center;
+    }
+    .hero-content {
+        text-align: center;
+    }
+    .hero-subtitle {
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .hero-buttons {
+        justify-content: center;
+    }
+    .hero-social-proof {
+        justify-content: center;
+    }
+}

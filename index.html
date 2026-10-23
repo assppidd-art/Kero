@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kero - Salva Comida, Apoya al Planeta</title>
+
+    <!-- Tipografía Fredoka -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" href="img/logo-icono.png">
+    <link rel="stylesheet" href="css/index.css"> 
+</head>
+<body class="body-index">
+
+    <!-- NAVBAR -->
+    <header class="navbar">
+        <div class="brand-kero">
+            <img src="img/logo-texto.png" alt="Kero" class="logo-texto">
+        </div>
+        <nav class="nav-links">
+            <a href="#como-funciona">¿Cómo funciona?</a>
+            <a href="#perfiles">Registrarse</a>
+            <a href="views/login.html" class="btn-login-nav">Iniciar Sesión</a>
+        </nav>
+    </header>
+
+    <!-- HERO SECTION EN 2 COLUMNAS -->
+    <section class="hero-section">
+        <div class="hero-container">
+            <!-- Columna Izquierda: Texto y Acciones -->
+            <div class="hero-content">
+                <span class="badge-hero">Iniciativa Anti-Desperdicio en Caracas</span>
+                <h1 class="hero-title">
+                    La comida no se bota, <br>
+                    se disfruta a <span class="destacado-naranja">precio de pana</span>
+                </h1>
+                <p class="hero-subtitle">
+                    Encuentra el excedente del día de tus locales favoritos en Caracas con precios de regalo. Salva tu cena, apoya a los emprendedores y cuida tu bolsillo.
+                </p>
+                <div class="hero-buttons">
+                    <a href="#perfiles" class="btn-hero primary">Quiero Salvar Comida</a>
+                    <a href="#perfiles" class="btn-hero secondary">Registrar mi Comercio</a>
+                </div>
+                <div class="hero-social-proof">
+                    <span class="dot-live"></span>
+                    <p>Más de <strong>1,500 kg</strong> de comida rescatados en Caracas</p>
+                </div>
+            </div>
+
+            <!-- Columna Derecha: Imagen Principal o Mockup -->
+            <div class="hero-image-container">
+                <img src="img/hero-comida.jpg" alt="Pack de comida Kero" class="hero-img">
+            </div>
+        </div>
+    </section>
+
+    <!-- CÓMO FUNCIONA -->
+    <section id="como-funciona" class="seccion-pasos">
+        <h2 class="titulo-seccion">¿Cómo funciona el resuelve?</h2>
+        <div class="grid-pasos">
+            <div class="tarjeta-paso">
+               <img src="img/paso-explora.png" alt="Explora locales" class="img-placeholder card-img">
+                <h3>1. Explora</h3>
+                <p>Los comercios publican lo que les queda antes de cerrar el día.</p>
+            </div>
+            <div class="tarjeta-paso">
+               <img src="img/paso-bolsa.png" alt="Arma tu bolsa" class="img-placeholder card-img">
+                <h3>2. Arma tu Bolsa</h3>
+                <p>Elige tu pack favorito con descuentos de hasta el 60%.</p>
+            </div>
+            <div class="tarjeta-paso">
+              <img src="img/paso-retira.png" alt="Retira y disfruta" class="img-placeholder card-img">
+                <h3>3. Retira y Disfruta</h3>
+                <p>Paga y retira directamente en el local antes del cierre.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- PERFILES DE REGISTRO (TARJETAS 3D) -->
+    <section id="perfiles" class="seccion-perfiles">
+        <h2 class="titulo-seccion">¿Cómo quieres unirte a Kero?</h2>
+
+        <div class="contenedor-flip-cards">
+
+            <!-- TARJETA 1: COMELÓN -->
+            <div class="flip-card">
+                <div class="flip-card-inner">
+                    <!-- Frente -->
+                    <div class="flip-card-front card-comelon">
+                        <span class="badge-card">Perfil Personal</span>
+                       <img src="img/perfil-pana.png" alt="El Pana Comelón" class="img-placeholder card-img">
+                        <h3>1. Ser un Comelón</h3>
+                        <p>Rescata packs de comida deliciosa de tus locales favoritos con descuentos increíbles.</p>
+                    </div>
+                    <!-- Vuelta -->
+                    <div class="flip-card-back card-comelon-back">
+                        <h3>Requisitos para Comelones</h3>
+                        <ul>
+                            <li>Estar en Caracas o zonas con aliados.</li>
+                            <li>Teléfono con conexión a internet.</li>
+                            <li>Ganas de salvar comida a precios de oferta.</li>
+                        </ul>
+                        <a href="views/registro.html?perfil=comelon" class="btn-card primary-card">Registrarme como Comelón</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- TARJETA 2: COMERCIO -->
+            <div class="flip-card">
+                <div class="flip-card-inner">
+                    <!-- Frente -->
+                    <div class="flip-card-front card-comercio">
+                        <span class="badge-card badge-verificado">Local Verificado</span>
+                       <img src="img/perfil-negocio.png" alt="Local Aliado" class="img-placeholder card-img">
+                        <h3>2. Ser un Comercio</h3>
+                        <p>Genera ingresos extra con los alimentos excedentes del día. Reduce mermas y llega a nuevos clientes.</p>
+                    </div>
+                    <!-- Vuelta -->
+                    <div class="flip-card-back card-comercio-back">
+                        <h3>Requisitos para Comercios</h3>
+                        <p class="texto-req"><strong>Indispensable:</strong> Vender o preparar alimentos en Caracas y contar con Pago Móvil o cuenta bancaria.</p>
+                        <div class="box-verificado">
+                            <strong>Insignia de Local Verificado</strong>
+                            <p>Si posees Permiso Sanitario, Curso de Manipulación o RIF, obtienes la insignia para vender hasta un 50% más rápido.</p>
+                        </div>
+                        <a href="views/registro_comercio.php" class="btn-card secondary-card">Registrarme como Comercio</a>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- FRANJA DE IMPACTO CON ANIMACIÓN JS -->
+    <section class="franja-impacto">
+        <div class="metrica">
+            <span class="num" data-target="1500" data-prefix="+" data-suffix=" Kg">0</span>
+            <span class="txt">De comida salvada</span>
+        </div>
+        <div class="metrica">
+            <span class="num" data-target="40" data-prefix="+" data-suffix="">0</span>
+            <span class="txt">Aliados en Caracas</span>
+        </div>
+        <div class="metrica">
+            <span class="num" data-target="60" data-prefix="" data-suffix="%">0</span>
+            <span class="txt">De ahorro promedio</span>
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="footer-kero">
+        <p>© 2026 Kero - Caracas, Venezuela.</p>
+    </footer>
+
+    <!-- SCRIPT DE CONTADORES ANIMADOS -->
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            const counters = document.querySelectorAll('.num');
+            const section = document.querySelector('.franja-impacto');
+            let started = false;
+
+            const startCounter = () => {
+                counters.forEach(counter => {
+                    const target = +counter.getAttribute('data-target');
+                    const prefix = counter.getAttribute('data-prefix') || '';
+                    const suffix = counter.getAttribute('data-suffix') || '';
+                    let count = 0;
+                    const speed = target / 60;
+
+                    const updateCount = () => {
+                        count += speed;
+                        if (count < target) {
+                            counter.innerText = prefix + Math.ceil(count) + suffix;
+                            setTimeout(updateCount, 25);
+                        } else {
+                            counter.innerText = prefix + target + suffix;
+                        }
+                    };
+                    updateCount();
+                });
+            };
+
+            window.addEventListener('scroll', () => {
+                if (!section) return;
+                const sectionPos = section.getBoundingClientRect().top;
+                const screenPos = window.innerHeight / 1.2;
+
+                if (sectionPos < screenPos && !started) {
+                    started = true;
+                    startCounter();
+                }
+            });
+        });
+    </script>
+    
+    <!-- SCRIPT PARA FORZAR EL DESPLAZAMIENTO A #PERFILES -->
+    <script>
+        window.addEventListener('load', () => {
+            if (window.location.hash === '#perfiles') {
+                const seccionPerfiles = document.getElementById('perfiles');
+                if (seccionPerfiles) {
+                    setTimeout(() => {
+                        seccionPerfiles.scrollIntoView({ behavior: 'smooth' });
+                    }, 100);
+                }
+            }
+        });
+    </script>
+    
+</body>
+</html>
